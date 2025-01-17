@@ -1,3 +1,5 @@
+import { IMovie } from "./models/Movie";
+import { Person } from "./models/Person";
 import "./style.css";
 
 // fetch("https://swapi.dev/api/people/1").then((response) => {
@@ -81,18 +83,28 @@ import "./style.css";
 //     console.log(data);
 //   });
 
-interface Person {
-  name: string;
-  hair_color: string;
-  mass: string;
-}
+// const response = await fetch("https://swapi.dev/api/people/1");
+// const data: Person = await response.json();
+// console.log(data);
 
-const response = await fetch("https://swapi.dev/api/people/1");
-const data: Person = await response.json();
+// const name = document.createElement("h2");
+// name.innerHTML = data.name;
+// document.getElementById("app")?.appendChild(name);
+
+const response = await fetch(
+  "https://omdbapi.com/?apikey=416ed51a&i=tt0076759"
+);
+const data: IMovie = await response.json();
 console.log(data);
 
-// const response = await fetch(
-//   "https://omdbapi.com/?apikey=416ed51a&i=tt0076759"
-// );
-// const data = await response.json();
-// console.log(data);
+const title = document.createElement("h2");
+title.innerHTML = data.Title;
+document.getElementById("app")?.appendChild(title);
+
+data.Ratings.forEach((r) => {
+  // Skapa html
+});
+
+for (let i = 0; i < data.Ratings.length; i++) {
+  // r === data.Rating[i]
+}
