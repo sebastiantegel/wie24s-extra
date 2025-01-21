@@ -1,5 +1,6 @@
 import { IMovie } from "./models/Movie";
 import { Person } from "./models/Person";
+import { IPokemon } from "./models/pokemon/IPokemon";
 import "./style.css";
 
 // fetch("https://swapi.dev/api/people/1").then((response) => {
@@ -108,3 +109,8 @@ data.Ratings.forEach((r) => {
 for (let i = 0; i < data.Ratings.length; i++) {
   // r === data.Rating[i]
 }
+
+const pokeResponse = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+const pokeData: IPokemon = await pokeResponse.json();
+
+console.log(pokeData.name);
