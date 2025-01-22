@@ -13,7 +13,11 @@ function App() {
         </nav>
       </header>
       <main> MAIN </main>
-      <footer> FOOTER </footer>
+      <footer>
+        <div>Social media</div>
+        <div>Map</div>
+        <div>Contact info</div>
+      </footer>
     </div>
   );
 }
