@@ -52,3 +52,9 @@ ul {
   display: flex;
   gap: 0.5rem;
 }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
