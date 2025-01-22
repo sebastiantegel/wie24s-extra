@@ -53,6 +53,12 @@ ul {
   gap: 0.5rem;
 }
 
+ul#todos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;

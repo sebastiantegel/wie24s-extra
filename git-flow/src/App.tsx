@@ -1,6 +1,13 @@
+import { useState } from "react";
 import "./App.css";
 
+class Todo {
+  constructor(public text: string) {}
+}
+
 function App() {
+  const [todos, setTodos] = useState<Todo[]>([]);
+
   return (
     <div id="wrapper">
       <header>
@@ -12,7 +19,13 @@ function App() {
           </ul>
         </nav>
       </header>
-      <main> MAIN </main>
+      <main>
+        <ul id="todos">
+          {todos.map((t) => {
+            return <li>{t.text}</li>;
+          })}
+        </ul>
+      </main>
       <footer> FOOTER </footer>
     </div>
   );
