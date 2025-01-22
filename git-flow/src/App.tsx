@@ -26,7 +26,11 @@ function App() {
           })}
         </ul>
       </main>
-      <footer> FOOTER </footer>
+      <footer>
+        <div>Social media</div>
+        <div>Map</div>
+        <div>Contact info</div>
+      </footer>
     </div>
   );
 }
