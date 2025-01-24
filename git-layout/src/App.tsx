@@ -3,7 +3,9 @@ import "./App.scss";
 function App() {
   return (
     <>
-      <header></header>
+      <header>
+        <h2>Lorem ipsum</h2>
+      </header>
       <main></main>
       <footer></footer>
     </>
