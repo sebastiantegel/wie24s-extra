@@ -1,11 +1,15 @@
 import "./App.scss";
+import "./index.scss";
+import logo from "./assets/bilder/jordan-logo-bilder.jpg";
 
 function App() {
   return (
     <>
       <header>
-        {" "}
         <h2>Lorem ipsum</h2>
+        <div className="logoTyp">
+          <img src={logo} alt="" />
+        </div>
         <nav>
           <ul>
             <li>
@@ -20,7 +24,6 @@ function App() {
           </ul>
         </nav>
       </header>
-
       <main></main>
       <footer></footer>
     </>
