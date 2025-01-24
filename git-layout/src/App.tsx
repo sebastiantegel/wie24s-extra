@@ -1,7 +1,13 @@
 import "./App.scss";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <header></header>
+      <main></main>
+      <footer></footer>
+    </>
+  );
 }
 
 export default App;
