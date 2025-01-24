@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <header></header>
-      <main></main>
+      <main>This is the main content for the page</main>
       <footer></footer>
     </>
   );
