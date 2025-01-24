@@ -1,9 +1,15 @@
 import "./App.scss";
+import "./index.scss";
+import logo from "./assets/bilder/jordan-logo-bilder.jpg";
 
 function App() {
   return (
     <>
-      <header></header>
+      <header>
+        <div className="logoTyp">
+          <img src={logo} alt="" />
+        </div>
+      </header>
       <main></main>
       <footer></footer>
     </>
