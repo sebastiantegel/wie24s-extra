@@ -1,24 +1,26 @@
-nav {
-  display: flex;
-  justify-content: center;
-  ul {
-    list-style: none;
+header {
+  height: 200px;
+
+  nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+
+  .logoTyp {
+    width: 100%;
+    // height: 100%;
+    display: flex;
+
+    img {
+      height: 10%;
+      width: 10%;
+    }
   }
 }
-  
-.logoTyp {
-  width: 100%;
-  height: 100%;
-  display: flex;
-
-  img {
-    height: 10%;
-    width: 10%;
-  }
-}
-
-

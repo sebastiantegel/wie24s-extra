@@ -1,15 +1,13 @@
 import "./App.scss";
 import "./index.scss";
-import logo from "./assets/bilder/jordan-logo-bilder.jpg";
+// import logo from "./assets/bilder/jordan-logo-bilder.jpg";
 
 function App() {
   return (
     <>
       <header>
         <h2>Lorem ipsum</h2>
-        <div className="logoTyp">
-          <img src={logo} alt="" />
-        </div>
+        <div className="logoTyp">{/* <img src={logo} alt="" /> */}</div>
         <nav>
           <ul>
             <li>
@@ -29,17 +27,15 @@ function App() {
         <div className="contact-socials contact-content">
           <div className="footer-contact">
             <h3>Contact Us</h3>
-            <p>
-              Email: info@gitflow.com
-            </p>
+            <p>Email: info@gitflow.com</p>
             <p>Phonenumber: 0701234567</p>
           </div>
           <div className="footer-address">
-          <h3>Address</h3>
-          <p>Gustavslundsvägen 151</p>
-          <p>167 51 Bromma</p>
-        </div>
-        <div className="footer-socials">
+            <h3>Address</h3>
+            <p>Gustavslundsvägen 151</p>
+            <p>167 51 Bromma</p>
+          </div>
+          <div className="footer-socials">
             <ul className="icon-socials">
               <li>
                 <a href="https://instagram.com" target="_blank">

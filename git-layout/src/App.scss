@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -20,7 +20,7 @@ h2 {
   text-align: center;
   background-color: rgb(159, 202, 204);
 }
-.icon-socials{
+.icon-socials {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -30,4 +30,16 @@ h2 {
 main {
   flex: 1;
   border: 1px solid green;
+}
+
+footer {
+  height: 20dvh;
+  display: flex;
+  width: 100%;
+
+  & > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
