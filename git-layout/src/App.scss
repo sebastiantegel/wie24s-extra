@@ -20,6 +20,12 @@ h2 {
   text-align: center;
   background-color: rgb(159, 202, 204);
 }
+.icon-socials{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+}
 
 main {
   flex: 1;
