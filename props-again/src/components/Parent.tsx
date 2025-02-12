@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Child } from "./Child";
 
-type Candy = {
+export type Candy = {
   hardness: number;
   flavour: string;
   color: string;
@@ -10,12 +10,13 @@ type Candy = {
 export const Parent = () => {
   const [candies, setCandies] = useState<Candy[]>([]);
 
-  const addCandy = (hardness: number, flavour: string, color: string) => {
+  const addCandy = (hardness: number, flavour: string, color: string): void => {
     setCandies([...candies, { hardness, flavour, color }]);
   };
 
   return (
     <>
+      {/* Parent -> { add: addCandy } -> Child */}
       <Child add={addCandy} />
 
       <ul>
